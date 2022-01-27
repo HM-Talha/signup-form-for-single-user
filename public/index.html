@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>index</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Jost:wght@500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
+        integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous" />
+</head>
+
+</html>
+
+
+<body>
+    <div class="main">
+        <input type="checkbox" id="chk" aria-hidden="true">
+
+        <div class="signup">
+            <form onsubmit="return false">
+                <h1>Sign up</h1>
+                <input type="text" name="txt" id="userName" placeholder="User name" required="">
+                <input type="email" name="email" id="email" placeholder="Email" required="">
+                <input type="password" name="pswd" id="password" placeholder="Password" required="">
+                <i onclick="showPass(this)" class="fas fa-eye eye"></i>
+
+                <button onclick="creatAcc()">Sign up</button>
+            </form>
+        </div>
+
+        <div class="login">
+            <form>
+                <h1 onclick="loginPage()">Login Page</h1>
+            </form>
+        </div>
+    </div>
+</body>
+<script src="app.js"></script>
+
+</html>
